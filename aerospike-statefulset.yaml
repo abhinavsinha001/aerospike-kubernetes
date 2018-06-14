@@ -91,7 +91,7 @@ spec:
               fieldPath: status.podIP
       initContainers:
       - name: aerospike-install
-        image: <YOUR_REPOSITORY>/aerospike-install
+        image: docker.pubmatic.com/aerospike-install:openwrap-v3
         volumeMounts:
         - name: confdir
           mountPath: /etc/aerospike
